@@ -13,5 +13,13 @@ The installation package is stored at the compute instance assigned to you, you 
 
 Use ``winscp`` to download the package
 
+1. Enter the ``ip address`` assigned to you, enter user name ``opc`` and the password
+![winscp](img/wscp1.png)
+
+![progress](img/wscp2.png)
+
+2. Change directory to ''/workshop/windows'' or ''/workshop/mac'', and select the install file
+![donwload](img/wscp3.png)
+
 
 
