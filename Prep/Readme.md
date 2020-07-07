@@ -8,7 +8,7 @@ For Windows, please install ``putty`` or use your favourite ssh tools
 For MacOS, you can can use ``ssh`` in mac terminal
 
 ## Install MySQL Workbench Enterprise 
-We will be using ''MySQL Workbench Enterprise'' to work with MySQL Server
+We will be using **MySQL Workbench Enterprise** to work with MySQL Server
 The installation package is stored at the compute instance assigned to you, you can download the installation package from the compute instance using ``winscp`` or any other scp utility programs
 
 Use ``winscp`` to download the package
