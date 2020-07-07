@@ -9,8 +9,8 @@ Introductory technical hands-on exercise to learn about MySQL
 | [Test Drive 2](Lab2) | Backing up Data
 | [Test Drive 3](Lab3) | Solving business problems with SQL
 | [Test Drive 4](Lab4) | Working with JSON documents
-| [Lab6](Lab6) | MySQL Security (Transparent Data Encryption, Firewall and Audit)
-| [Lab7](Lab7) | MySQL InnoDB Cluster
+| [Test Drive 5](Lab5) | Monitor your database engine
+| [Test Drive 6](Lab6) | Building highly available database cluster
 | [Lab8](Lab8) | MySQL Replication
 | [Lab8a](Lab8a) | MySQL Cross-Site replication
 | [Lab8b](Lab8b) | Window and CTEs
