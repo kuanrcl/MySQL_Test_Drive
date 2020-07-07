@@ -1,9 +1,9 @@
 # Lab 1: Navigate the MySQL Engine
 
 The MySQL server is up and running at the OCI compute instance, we will use MySQL Workbench to navigate the the database engine:
-* Engine Status
-* Engine Dashboard
-* Engine Log
+1 Engine Status
+1 Engine Dashboard
+1 Engine Log
 
 ## Engine Status (is it running? how much is the CPU utilization, etc)
 
