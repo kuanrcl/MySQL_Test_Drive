@@ -1,4 +1,4 @@
-# Test Drive 2: Working with data
+# Test Drive 2: Backing up data
 
 One of the most important tasks of working with database engine is to backup the data to prepare for unforeseen situations when data needs to be restored from backup
 
