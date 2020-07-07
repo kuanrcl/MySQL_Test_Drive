@@ -1,4 +1,4 @@
-# Test Drive 3: Fun with SQL
+# Test Drive 3: Solving business problems with SQL
 
 Data is now considered the most valuable corporate asset for most digital and social enterprises, startups and traditional enterprise businesses. Business strategy is now driven by analysing massive amount of data ingested from vast variety of sources such as web-clicks, mobile application, location-based data and others. 
 
