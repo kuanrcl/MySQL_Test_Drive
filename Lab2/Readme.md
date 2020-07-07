@@ -1,7 +1,11 @@
 # Test Drive 2: Working with data
 
 One of the most important tasks of working with database engine is how to import and export data from the database engine
-By default, MySQL Workbench uses ``mysqldump`` utility to export the data in raw format in a single SQL file as database backup. If the database size is large, say more than 1TB, the data export process will take a long time to complete, and restoring data by using the **import** function will take more than triple of the export time
+By default, MySQL Workbench uses ``mysqldump`` utility to export the data by writing out data row one by one to in a single SQL file as database backup. If the database size is large, say more than 1TB, the data export process will take a long time to complete, and restoring data by using the **import** function will take more than triple of the export time. 
+
+The better data export or backup option is to use 
+> **MySQL Enterprise Backup** feature to backup/restore data faster and safer
+> **MySQL Enterprise Backup** backup the _physical_ data files therefore it is very fast comparing to ``mysqldump``
 
 ## Exporting the data
 
