@@ -14,12 +14,12 @@ There are 2 tabs in the **Navigator** panel of the Workbench
 We will use the **Administration** to navigate engine, first we will look at the **Server Status**
 * The host information
 * Server features (including Enterprise Features)
-** These features can be turned on and off dynamically
+  ** These features can be turned on and off dynamically
 * Server directories
-** where is the data stored int the system
-** error messages log file
-** general query log file
-** slow query log file
+  ** where is the data stored int the system
+  ** error messages log file
+  ** general query log file
+  ** slow query log file
 
 ![wb1](img/wb-1.png)
 
@@ -41,7 +41,7 @@ In the dashboard, you will see the 3 main indicators showing performance statist
 * SQL execution rates
 * Engine resource utilization
 
-![wb2](img/wb-2.png)
+![wb9](img/wb-9.png)
 
 
 ## Client Connections
