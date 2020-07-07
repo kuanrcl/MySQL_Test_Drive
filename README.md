@@ -1,7 +1,8 @@
 # MySQL_Test_Drive
-Introductory technical hands-on exercise to learn about MySQL
+Introductory session to test drive the powerful MySQL database engine!
 
-## Lab Structure
+Are you brave enough to test the awesome power of MySQL engine?
+## Test Drives
 |||
 | ------------- | ------------------------------------------------------- |
 | [Prep](Prep) | Connecting to Oracle Cloud Infrastructure
