@@ -8,7 +8,7 @@ The MySQL server is up and running at the OCI compute instance, we will use MySQ
 ## Engine Status (is it running? how much is the CPU utilization, etc)
 
 There are 2 tabs in the **Navigator** panel of the Workbench
-* Administration
+* **Administration**
 * Schemas
 
 We will use the **Administration** to navigate engine, first we will look at the **Server Status**
@@ -26,16 +26,15 @@ We will use the **Administration** to navigate engine, first we will look at the
 ## Engine Dashboard
 
 Once you have check out MySQL engine status, you can look at the engine dashboard to check out the health status
+Now we can take the engine for a quick test drive to see how it performs. To do that, we will run a small load on the engine, so that you can see the live statistics displayed on the dashboard on how is the database engine performs 
 
-Lets run a small load on the engine, so that you can see the live statistics displayed on the dashboard on how is the database engine performs 
-
-In your ssh terminal, execute the following command (we are simulating 50 users running against the engines)
+1. In your ssh terminal, execute the following command (we are simulating 50 users running against the engines)
 
 ```
 mysqlslap --delimiter=";" --create="CREATE TABLE a (b int);INSERT INTO a VALUES (23)" --query="SELECT * FROM a" --concurrency=50 --iterations=200
 ```
 
-In the dashboard, you will see the 3 main indicators showing performance statistics
+2. In the dashboard, you will see the 3 main indicators showing performance statistics
 
 * Network traffic
 * SQL execution rates
