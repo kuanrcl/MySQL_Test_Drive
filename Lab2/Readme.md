@@ -31,9 +31,11 @@ You can specify various backup options such as
 
 By default, MySQL Workbench uses ``mysqldump`` utility to export the data by writing out data row one by one to in a single SQL file as database backup. If the database size is large, say more than 1TB, the data export process will take a long time to complete, and restoring data by using the **import** function will take more than triple of the export time. 
 
-The better data export or backup option is to use 
+The most reliable data backup option is to use 
 > **MySQL Enterprise Backup** feature to backup/restore data faster and safer
 > **MySQL Enterprise Backup** backup the _physical_ data files therefore it is very fast comparing to ``mysqldump``
+
+You must use **MySQL Enterprise Backup** to backup your important data becuase data is now a corporate asset and it has to be treated with utmost importance. You can export data in row format as an additional data copy but you must use **MySQL Enterprise Backup** as your main backup tool
 
 ## Exporting the data
 
