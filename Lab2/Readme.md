@@ -1,6 +1,34 @@
 # Test Drive 2: Working with data
 
-One of the most important tasks of working with database engine is how to import and export data from the database engine
+One of the most important tasks of working with database engine is to backup the data to prepare for unforeseen situations when data needs to be restored from backup
+
+**MySQL Enterprise Backup** is a must-have tool for data backup and restore. It is designed for 24x7 data operations where database engine is not allowed to be shutdown and you need to run your backup task online without impacting the data operation
+
+## Backing up data using MySQL Enterprise Backup
+
+In the **Administration** tab, select **Online Backup**
+
+1. Configure the basic MySQL Enterprise Backup settings
+
+![wb-16](img/wb-16.png)
+
+2. Create a backup job
+You can specify various backup options such as 
+* Full
+* Incremental
+ * Compression
+ * Encryption
+ * Others
+
+![wb-17](img/wb-17.png)
+
+3. Run the backup
+
+![wb-18](img/wb-18.png)
+
+
+## [OPTIONAL] Export/Import data
+
 By default, MySQL Workbench uses ``mysqldump`` utility to export the data by writing out data row one by one to in a single SQL file as database backup. If the database size is large, say more than 1TB, the data export process will take a long time to complete, and restoring data by using the **import** function will take more than triple of the export time. 
 
 The better data export or backup option is to use 
