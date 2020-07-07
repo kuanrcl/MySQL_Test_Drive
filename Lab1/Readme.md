@@ -30,6 +30,8 @@ Now we can take the engine for a quick test drive to see how it performs. To do 
 
 1. In your ssh terminal, execute the following command (we are simulating 50 users running against the engines)
 
+![wb11](img/wb-11.png)
+
 ```
 mysqlslap --delimiter=";" --create="CREATE TABLE a (b int);INSERT INTO a VALUES (23)" --query="SELECT * FROM a" --concurrency=50 --iterations=200
 ```
@@ -37,20 +39,19 @@ mysqlslap --delimiter=";" --create="CREATE TABLE a (b int);INSERT INTO a VALUES 
 2. In the dashboard, you will see the 3 main indicators showing performance statistics
 
 * Network traffic
-* SQL execution rates
+* SQL execution rates (**SQL/second**)
 * Engine resource utilization
 
 ![wb9](img/wb-9.png)
-
 
 ## Client Connections
 
 On **Client Connection**, you can look at who are the users currently connecting to the database engine
 You should see at least 50 connections using the database engine
 
-![wb3](img/wb-3.png)
+![wb3](img/wb-10.png)
 
-## Engine server error messages log
+## Engine log
 
 On **Server Logs**, you can monitor the engine message log for error, warning, alert
 
