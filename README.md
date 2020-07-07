@@ -6,9 +6,9 @@ Introductory technical hands-on exercise to learn about MySQL
 | ------------- | ------------------------------------------------------- |
 | [Prep](Prep) | Connecting to Oracle Cloud Infrastructure
 | [Test Drive 1](Lab1) | Navigating thhe MySQL Engine 
-| [Test Drive 2](Lab2) | Working with Data     
-| [Lab4](Lab4) | MySQL Enterprise Backup
-| [Lab5](Lab5) | MySQL Enterprise Monitor
+| [Test Drive 2](Lab2) | Managing Data     
+| [Test Drive 3](Lab3) | Working with SQL
+| [Test Drive 4](Lab4) | Working with JSON documents
 | [Lab6](Lab6) | MySQL Security (Transparent Data Encryption, Firewall and Audit)
 | [Lab7](Lab7) | MySQL InnoDB Cluster
 | [Lab8](Lab8) | MySQL Replication
