@@ -19,6 +19,10 @@ With native support for JSON, SQL is now optional for full-stack developer, you 
 > You can generate commonly used keys from JSON as columns for SQL query and reporting. SQL is very good to generate **report and analysis**
 > You can leverage MySQL transaction management capabilities to rollback/commit changes in JSON document for realiable data consistency
 
+### Using MySQL Shell with JSON
+
+We will use mysqlsh to query JSON documents stored in MySQL which you have used in the demo PHP application
+
 ```
 mysqlsh
 \js
@@ -28,7 +32,6 @@ var r=db.getCollection('restaurants')
 r.find().limit(2)
 ```
 
-## More examples
 ```
 r.find().fields("name", "cuisine").limit(2)
 r.find("cuisine='Bakery'").fields("name", "cuisine").limit(2)
