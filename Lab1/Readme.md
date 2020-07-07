@@ -55,10 +55,6 @@ You should see at least 50 connections using the database engine
 
 On **Server Logs**, you can monitor the engine message log for error, warning, alert
 
-![wb4](img/wb-4.png)
-![wb5](img/wb-5.png)
-![wb6](img/wb-6.png)
-![wb7](img/wb-7.png)
 ![wb8](img/wb-8.png)
 
 
