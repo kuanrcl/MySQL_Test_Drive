@@ -57,6 +57,34 @@ On **Server Logs**, you can monitor the engine message log for error, warning, a
 
 ![wb8](img/wb-8.png)
 
+## [BONUS] Tuning the engine
+
+MySQL engine can be tuned according to your workload requirements. Lets test this on MySQL engine!
+
+1. Find out what are the current settings and what do we want to tune?
+
+On **Status and System Variables**, you can look at MySQL engine parameters and fine-tune the values accordingly
+The current value of **Networking/Advanced/max_connections** is set to ``150``, we want to increase this to ``200`` so that we can support more users to use the database
+
+![wb-13](img/wb-13.png)
+
+2. Update the new value
+
+You will issue a ``set`` command to set the new value of **200** to **max_connections**
+
+![wb-14](img/wb-14.png)
+
+3. Run the bigger workload again with 100 users, duuble the workload earlier
+
+```
+mysqlslap --delimiter=";" --create="CREATE TABLE a (b int);INSERT INTO a VALUES (23)" --query="SELECT * FROM a" --concurrency=100 --iterations=200
+```
+
+4. Check out the **Client Connections**
+
+You should see that the **max_connections** is now set to 200 connections to support more users _while the engine is running!_ How cool is that?
+
+![wb-15](img/wb-15.png)
 
 
 
