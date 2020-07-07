@@ -15,7 +15,7 @@ Poke around the data and find out answers to these questions:
 
  1. What are the data stored?
 
-![wb-15](img/wb-15.png)
+![wb-16](img/wb-16.png)
 
  1. How many types of fruits the stores sell?
 ```
