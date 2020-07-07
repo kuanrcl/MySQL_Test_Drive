@@ -1,4 +1,4 @@
-# Lab 1: Navigate the MySQL Engine
+# Test Drive 1: Navigate the MySQL Engine
 
 The MySQL server is up and running at the OCI compute instance, we will use MySQL Workbench to navigate the the database engine:
 1. Engine Status
