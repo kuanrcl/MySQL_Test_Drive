@@ -13,16 +13,16 @@ We will use a data set consisting of sales data of a chain fruit stores across m
 
 Poke around the data and find out answers to these questions:
 
- 1. What are the data stored?
+* What are the data stored?
 
 ![wb-16](img/wb-16.png)
 
- 1. How many types of fruits the stores sell?
+* How many types of fruits the stores sell?
 ```
 select distinct fruit from fruitmart;
 ```
 
- 1. How many stores?
+* How many stores?
 ```
 select distinct store from fruitmart;
 ```
