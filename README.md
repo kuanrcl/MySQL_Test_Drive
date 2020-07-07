@@ -4,9 +4,9 @@ Introductory technical hands-on exercise to learn about MySQL
 ## Lab Structure
 |||
 | ------------- | ------------------------------------------------------- |
-| [Prep](Prep) | Connect to Oracle Cloud Infrastructure
-| [Lab1](Lab1) | MySQL Installation
-| [Lab2](Lab2) | MySQL Administration     
+| [Prep](Prep) | Connecting to Oracle Cloud Infrastructure
+| [Test Drive 1](Lab1) | Navigating thhe MySQL Engine 
+| [Test Drive 2](Lab2) | Working with Data     
 | [Lab4](Lab4) | MySQL Enterprise Backup
 | [Lab5](Lab5) | MySQL Enterprise Monitor
 | [Lab6](Lab6) | MySQL Security (Transparent Data Encryption, Firewall and Audit)
