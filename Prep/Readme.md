@@ -8,7 +8,7 @@ For Windows, please install ``putty`` or use your favourite ssh tools
 For MacOS, you can can use ``ssh`` in mac terminal
 
 ## Install MySQL Workbench Enterprise 
-We will be using ""MySQL Workbench Enterprise"" to work with MySQL Server
+We will be using ''MySQL Workbench Enterprise'' to work with MySQL Server
 The installation package is stored at the compute instance assigned to you, you can download the installation package from the compute instance using ``winscp`` or any other scp utility programs
 
 Use ``winscp`` to download the package
@@ -24,6 +24,11 @@ Use ``winscp`` to download the package
 2. Change directory to ''/workshop/windows'' or ''/workshop/mac'', and select the install file and copy (drag-and-drop) to your local directory on the left window
 
 ![donwload](img/wscp3.png)
+
+## Configure MySQL Workbench
+
+Once you have installed MySQL Workbench, you will need to configure a connection to the MySQL server running in OCI
+
 
 
 
