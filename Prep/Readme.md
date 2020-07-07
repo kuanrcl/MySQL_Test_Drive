@@ -43,13 +43,21 @@ Once you have installed MySQL Workbench, you will need to configure a ``connecti
 
 4. Once connection is tested successfully, we need to configure ``server management`` so that you can use Workbench to manage MySQL server
 
-![server1](img/wb-s1.png)
+![server1](img/wb_s1.png)
 
-![server2](img/wb-s2.png)
+5. Select ``SSH login based management``, and ``Oracle Linux 7``
 
-![server3](img/wb-s3.png)
+![server2](img/wb_s2.png)
 
-![server4](img/wb-s4.png)
+6. Specify your ssh login and password
+
+![server3](img/wb_s3.png)
+
+7. Once the ssh login is validated, you are done
+
+![server4](img/wb_s4.png)
+
+
 
 
 
