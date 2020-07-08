@@ -5,7 +5,7 @@ Are you brave enough to test the awesome power of MySQL engine?
 ## Test Drives
 |||
 | ------------- | ------------------------------------------------------- |
-| [Prep](Prep) | Connecting to Oracle Cloud Infrastructure
+| [Preparation](Prep) | Connecting to Oracle Cloud Infrastructure
 | [Test Drive 1](Lab1) | Navigating the MySQL Engine 
 | [Test Drive 2](Lab2) | Backing updata
 | [Test Drive 3](Lab3) | Solving business problems with SQL
