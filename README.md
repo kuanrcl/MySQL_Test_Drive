@@ -1,4 +1,4 @@
-# MySQL_Test_Drive
+# MySQL Test Drive
 Introductory session to test drive the powerful MySQL database engine!
 
 Are you brave enough to test the awesome power of MySQL engine?
