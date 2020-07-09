@@ -8,7 +8,10 @@ MySQL supports JSON documents natively in the database engine leveraging all the
 You can check out how we can store and retrieve JSON documents in MySQL database engine
 
 Launch the demo restaurant application (written in PHP with MySQL XDevAPI, a powerful modern API for CRUD application)
-1. Point your browser to http:://ip_address/restaurants
+1. Point your browser to http:://ip_address/restaurant/
+
+![json](img/json-1.png)
+
 
 ## [BONUS] Interact with JSON using CRUD API with MySQL Shell
 
