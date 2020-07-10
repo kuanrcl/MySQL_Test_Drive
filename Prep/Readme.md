@@ -8,8 +8,65 @@ For Windows, please install ``putty`` or use your favourite ssh tools
 
 For MacOS, you can can use ``ssh`` in Mac terminal
 
+### To configure putty in Windows
+
+1. Specify the ``ip address`` and ``port`` (22)
+![ssh1](img/ssh1.png)
+
+2. Select "Connection->Data", specify the login username ``opc``
+![ssh2](img/ssh2.png)
+
+3. Save the session as "mysql-oci" so that you can reuse later and to create the tunnel configuration later
+![ssh3](img/ssh3.png)
+
+4. Select "SSH->Tunnels", add a ``port`` (5901), ``destination`` (localhost:5901), click "Add"
+![ssh5](img/ssh5.png)
+
+5. Save the session as "mysql-oci-tunnel"
+
+### To use ssh in Mac
+
+```
+ssh opc@ip_address
+```
 
 ## Installing and using VNCViewer/TightVNC to work with MySQL Workbench
+
+1. Download and install "VNC Viewer" or "TightVNC" on Windows/Mac
+2. ssh using "mysql-oci-tunnel" using putty or ssh
+3. Start vncserver
+
+```
+vncserver -geometry 1280x1024
+```
+## Configuring MySQL Workbench
+
+1. In your laptop, Start VNC Viewer or TigthVNC
+2. Specify local connection ``localhost:5901``
+
+![vnc1](img/vnc1.png)
+
+3. Enter password when prompted
+
+4. Start **MySQL Workbench**
+
+![vnc3](img/vnc3.png)
+
+5. (optional) You can adjust the windows size in TightVNC to work better for you
+
+![vnc4](img/vnc4.png)
+
+6. Right click on the **Local Instance 3306**, **Edit Connection**
+
+![wb-18](img/wb-18.png)
+
+7. Configure the System Profile to specify **Oracle Linux 7** and **Save**
+
+![wb-19](img/wb-19.png)
+
+8. Double-click the **Local Instance 3306**, enter the **root** password
+
+![wb-20](img/wb-20.png)
 
 
 ## [OPTIONAL] Install MySQL Workbench Enterprise 
@@ -30,7 +87,8 @@ Use ``winscp`` to download the package
 
 ![donwload](img/wscp3.png)
 
-## Configure MySQL Workbench
+
+### Configure MySQL Workbench
 
 Once you have installed MySQL Workbench, you will need to configure a ``connection`` to the MySQL server running in OCI
 
@@ -61,9 +119,6 @@ Once you have installed MySQL Workbench, you will need to configure a ``connecti
 7. Once the ssh login is validated, you are done
 
 ![server4](img/wb_s4.png)
-
-
-
 
 
 
