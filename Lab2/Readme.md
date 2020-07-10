@@ -16,18 +16,11 @@ In the **Administration** tab, select **Online Backup**
 
 ![wb-24](img/wb-24.png)
 
-3. Specify the ``backup directory`` **/data/backup**
+3. Specify the ``backup directory`` **/data/backup**, click on **Save and Reschedule**
 
 ![wb-27](img/wb-27.png)
 
-4. Make sure the backup directory is **/data/backup**
-![wb-25](img/wb-25.png)
-
-4. Click on **Save and Reschedule**
-
-![wb-26](img/wb-26.png)
-
-6. Execute the backup job 
+4. Execute the backup job 
 
 ![wb-28](img/wb-28.png)
 
