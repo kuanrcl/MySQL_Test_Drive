@@ -18,7 +18,7 @@ For MacOS, you can can use ``ssh`` in Mac terminal
 
 ![ssh2](img/ssh2.png)
 
-3. Save the session as "mysql-oci" so that you can reuse later and to create the tunnel configuration later
+3. Save the session as **mysql-oci** so that you can reuse later and to create the tunnel configuration later
 
 ![ssh3](img/ssh3.png)
 
@@ -26,7 +26,7 @@ For MacOS, you can can use ``ssh`` in Mac terminal
 
 ![ssh5](img/ssh5.png)
 
-5. Save the session as "mysql-oci-tunnel"
+5. Save the session as **mysql-oci-tunnel**
 
 ### To use ssh in Mac
 
