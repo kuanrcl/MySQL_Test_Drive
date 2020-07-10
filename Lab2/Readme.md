@@ -10,12 +10,13 @@ In the **Administration** tab, select **Online Backup**
 
 1. Configure the basic MySQL Enterprise Backup settings
 
-![wb-24](img/wb-24.png)
+![wb-22](img/wb-22.png)
+
 
 2. Create a backup job, click on **New Job**
 Specify the ``backup directory`` **/data/backup**, Clikc on**Save and Reschedule**
 
-![wb-22](img/wb-22.png)
+![wb-24](img/wb-24.png)
 
 ![wb-27](img/wb-27.png)
 
