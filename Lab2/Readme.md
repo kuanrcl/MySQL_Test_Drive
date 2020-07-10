@@ -24,6 +24,10 @@ In the **Administration** tab, select **Online Backup**
 
 ![wb-26](img/wb-26.png)
 
+5. Backup complted
+
+![wb-28](img/wb-28.png)
+
 
 
 ## [OPTIONAL] Export/Import data
