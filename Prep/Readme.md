@@ -8,6 +8,7 @@ For Windows, please install ``putty`` or use your favourite ssh tools
 
 For MacOS, you can can use ``ssh`` in Mac terminal
 
+
 ## Installing and using VNCViewer/TightVNC to work with MySQL Workbench
 
 
