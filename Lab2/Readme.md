@@ -14,13 +14,14 @@ In the **Administration** tab, select **Online Backup**
 
 
 2. Create a backup job, click on **New Job**
-Specify the ``backup directory`` **/data/backup**, Clikc on**Save and Reschedule**
 
 ![wb-24](img/wb-24.png)
 
+3. Specify the ``backup directory`` **/data/backup**, Clikc on**Save and Reschedule**
+
 ![wb-27](img/wb-27.png)
 
-3. Run the backup
+4. Run the backup
 
 ![wb-26](img/wb-26.png)
 
