@@ -10,7 +10,7 @@ In the **Administration** tab, select **Online Backup**
 
 1. Configure the basic MySQL Enterprise Backup settings
 
-![wb-16](img/wb-16.png)
+![wb-22](img/wb-22.png)
 
 2. Create a backup job
 You can specify various backup options such as 
@@ -20,12 +20,15 @@ You can specify various backup options such as
  * Encryption
  * Others
 
-![wb-17](img/wb-17.png)
+![wb-24](img/wb-24.png)
+
+![wb-25](img/wb-25.png)
 
 3. Run the backup
 
-![wb-18](img/wb-18.png)
+![wb-26](img/wb-26.png)
 
+![wb-28](img/wb-28.png)
 
 ## [OPTIONAL] Export/Import data
 
