@@ -13,16 +13,13 @@ In the **Administration** tab, select **Online Backup**
 ![wb-22](img/wb-22.png)
 
 2. Create a backup job
-You can specify various backup options such as 
-* Full
-* Incremental
- * Compression
- * Encryption
- * Others
+Specify the ``backup directory`` **/data/backup**, **save and reschedule**
 
 ![wb-24](img/wb-24.png)
 
 ![wb-25](img/wb-25.png)
+
+![wb-27](img/wb-27.png)
 
 3. Run the backup
 
