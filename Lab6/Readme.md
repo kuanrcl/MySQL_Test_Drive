@@ -17,6 +17,8 @@ The database engine needs to be highly available with built-in clustering capabi
 
 2. Select **Single Primary Cluster**, and start hitting the cluster
 
+![ib1](img/ib1.png)
+
 3. Similate database engine failure by shutting down one of the engine
 
 4. Bring up the database engine and see how it joins the cluster automatically
