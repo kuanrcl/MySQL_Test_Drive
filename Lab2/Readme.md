@@ -46,6 +46,13 @@ We will run both **mysqlbackup** and **mysqldump** to compare the backup perform
 
 In this quick lab, ``ssh`` to the compute instance
 
+0. Check the database size
+
+```
+cd ~/TestDrive/testdriver-2
+./dbsize.sh
+```
+
 1. Run mysqldump 
 
 ```
