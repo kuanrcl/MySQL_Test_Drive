@@ -8,11 +8,14 @@ We will build a MySQL InnoDB Cluster that requires minimum of 3 MySQL servers. T
 
 1. Create a cluster and add these database engines to the cluster
 
+First of all, we will make sure the 3 MySQL Servers are ready to be deployed to the InnoDB Cluster
+
 ```
 cd /home/opc/TestDrive/testdrive-6
-./01-
+./01-checkConfig.sh
 ```
 
+Next, we will configure the MySQL server with a cluster admin user to be ready to deploy to InnoDB Cluster
 ```
 ./02-configInstance.sh
 Configuring local MySQL instance listening at port 3310 for use in an InnoDB cluster...
@@ -36,6 +39,7 @@ Do you want to perform the required configuration changes? [y/n]: y
 Do you want to restart the instance after configuring it? [y/n]: y
 ```
 
+Finally, we can start creating the InnoDB Cluster
 ```
 03-createCluster.sh
 ```
@@ -52,5 +56,17 @@ Do you want to restart the instance after configuring it? [y/n]: y
 
 3. Similate database engine failure by shutting down one of the engine
 
+```
+sudo systemctl stop mysqld@mysql01
+```
+
+Take note on how the cluster nominate the surviving MySQL Server to be the Primary Server (Read/Write node) to serve the application. 
+
 4. Bring up the database engine and see how it joins the cluster automatically
+
+```
+sudo systemctl start mysqld@mysql01
+```
+
+Observe how the MySQL server synchronize missing transactions while it was shutdown and rejoins the cluster once the transactions are applied and in sync with the cluster members
 
