@@ -30,7 +30,7 @@ In the **Administration** tab, select **Online Backup**
 
 
 
-## [OPTIONAL] Export/Import data
+## Comparing MySQL Enterprise Backup with mysqldump
 
 **MySQL Enterprise Backup** is an essential tool for enterprise database deployment. Besides *mysqlbackup* there is a database export tool, ``mysqldump`` utility to export the data by writing out data row one by one to in a single SQL file as database backup, this is the only tool available in MySQL Community Edition. If the database size is large, say more than 1TB, the data export process will take a long time to complete, and restoring data by using the ``mysqldump`` will take more than triple of the export time. 
 
