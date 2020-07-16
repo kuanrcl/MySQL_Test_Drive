@@ -74,7 +74,7 @@ You will issue a ``set`` command to set the new value of **200** to **max_connec
 
 ![wb-14](img/wb-14.png)
 
-3. Run the bigger workload again with 100 users, duuble the workload earlier
+3. Run the bigger workload again with 100 users, double the workload earlier
 
 ```
 mysqlslap --delimiter=";" --create="CREATE TABLE a (b int);INSERT INTO a VALUES (23)" --query="SELECT * FROM a" --concurrency=100 --iterations=200
