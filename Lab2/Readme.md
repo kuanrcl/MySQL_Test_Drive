@@ -32,7 +32,7 @@ In the **Administration** tab, select **Online Backup**
 
 ## [OPTIONAL] Export/Import data
 
-By default, MySQL Workbench uses ``mysqldump`` utility to export the data by writing out data row one by one to in a single SQL file as database backup. If the database size is large, say more than 1TB, the data export process will take a long time to complete, and restoring data by using the **import** function will take more than triple of the export time. 
+**MySQL Enterprise Backup** is an essential tool for enterprise database deployment. Besides *mysqlbackup* there is a database export tool, ``mysqldump`` utility to export the data by writing out data row one by one to in a single SQL file as database backup, this is the only tool available in MySQL Community Edition. If the database size is large, say more than 1TB, the data export process will take a long time to complete, and restoring data by using the ``mysqldump`` will take more than triple of the export time. 
 
 The most reliable data backup option is to use 
 > **MySQL Enterprise Backup** feature to backup/restore data faster and safer
@@ -40,27 +40,41 @@ The most reliable data backup option is to use
 
 You must use **MySQL Enterprise Backup** to backup your important data becuase data is now a corporate asset and it has to be treated with utmost importance. You can export data in row format as an additional data copy but you must use **MySQL Enterprise Backup** as your main backup tool
 
-## Exporting the data
+## Comparison of **mysqlbackup** and **mysqldump**
 
-In the **Administration** tab, use the **Data Export** function to export the data out of the database engine
+We will run both **mysqlbackup** and **mysqldump** to compare the backup performance so that you would appreciate the value of using an enterprise-grade backup tool for your mission critical database
 
-![wb](img/wb-5.png)
+In this quick lab, ``ssh`` to the compute instance
 
-1. Select the **database** you want to export, and select if you want to export selective tables or all the tables
-2. Specify the location of the export file in your local directory
-3. **Start Export**
+1. Run mysqldump 
 
-You can check out **Advanced Options** if you want to backup the data using advanced features such as compression, exporting table statistics, etc. For now, this is just for your information that there are many options you can specify to customize your data export
+```
+cd ~/TestDrive/testdriver-2
+./01-mysqldump.sh
+```
+At the end of the script, please note the time taken for the mysqldump
 
-![wb-6](img/wb-6.png)
+```
+real    0m33.696s
+user    0m13.976s
+sys     0m1.719s
+```
 
-## Import the data
+2. Run mysqlbackup
 
-You must test your data export by testing the data import to validate the data export is good for restore purpose
+```
+cd ~/TestDrive/testdriver-2
+./02-med-backup-image.sh
+```
+At the end of the script, please note the time taken for the mysqldump
 
-![wb-12](img/wb-12.png)
+```
+real    2m34.512s
+user    0m3.330s
+sys     0m6.241s
+```
 
-To test the data import, create a new dummy database to import the data
+To compare the time (the actual execution of the backup process which are *user* and *sys* time) taken of mysqldump ``15.695s`` (13.976s + 1.719s) and mysqlbackup ``9.571s`` (3.333s + 6.241s)
 
-![wb-7](img/wb-7.png)
 
+Clearly mysqlbackup is faster than mysqldump.
