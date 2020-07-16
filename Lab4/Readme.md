@@ -15,7 +15,7 @@ With native support for JSON, SQL is now optional for full-stack developer, you 
 0. We will upload a set of JSON documents into the database. We will use the sample ``restaurants`` data set exported from mongodb
 
 ```
-cd ~/TestDrive/testdrver-4/
+cd ~/TestDrive/testdrive-4/
 ls from_mongo.json
 mysqlsh
 \c root:mysql@localhost:33060
