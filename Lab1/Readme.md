@@ -63,16 +63,16 @@ MySQL engine can be tuned according to your workload requirements. Lets test thi
 
 1. Find out what are the current settings and what do we want to tune?
 
-On **Status and System Variables**, you can look at MySQL engine parameters and fine-tune the values accordingly
-The current value of **Networking/Advanced/max_connections** is set to ``150``, we want to increase this to ``200`` so that we can support more users to use the database
+Select **INSTANCE->Options File**, you can look at MySQL engine parameters and fine-tune the values accordingly
+The current value of **Networking->max_connections** is set to ``150``, we want to increase this to ``200`` so that we can support more users to use the database
 
-![wb-13](img/wb-13.png)
+![wb-30](img/wb-30.png)
 
-2. Update the new value
+2. Restart the database to have the new value takes effect
 
-You will issue a ``set`` command to set the new value of **200** to **max_connections**
+Stop and Start the server
 
-![wb-14](img/wb-14.png)
+![wb-31](img/wb-31.png)
 
 3. Run the bigger workload again with 100 users, double the workload earlier
 
