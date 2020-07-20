@@ -39,16 +39,71 @@ Do you want to perform the required configuration changes? [y/n]: y
 Do you want to restart the instance after configuring it? [y/n]: y
 ```
 
-Finally, we can start creating the InnoDB Cluster
+Finally, we can start creating the InnoDB Cluster, select **Clone** when prompted on "Please select recovery method":
 ```
 03-createCluster.sh
+
+The instance 'localhost:3330' was successfully added to the cluster.
+
+{
+    "clusterName": "mycluster",
+    "defaultReplicaSet": {
+        "name": "default",
+        "primary": "workshop6:3310",
+        "ssl": "REQUIRED",
+        "status": "OK",
+        "statusText": "Cluster is ONLINE and can tolerate up to ONE failure.",
+        "topology": {
+            "workshop6:3310": {
+                "address": "workshop6:3310",
+                "mode": "R/W",
+                "readReplicas": {},
+                "replicationLag": null,
+                "role": "HA",
+                "status": "ONLINE",
+                "version": "8.0.20"
+            },
+            "workshop6:3320": {
+                "address": "workshop6:3320",
+                "mode": "R/O",
+                "readReplicas": {},
+                "replicationLag": null,
+                "role": "HA",
+                "status": "ONLINE",
+                "version": "8.0.20"
+            },
+            "workshop6:3330": {
+                "address": "workshop6:3330",
+                "mode": "R/O",
+                "readReplicas": {},
+                "replicationLag": null,
+                "role": "HA",
+                "status": "ONLINE",
+                "version": "8.0.20"
+            }
+        },
+        "topologyMode": "Single-Primary"
+    },
+    "groupInformationSourceMember": "workshop6:3310"
+    
 ```
 
-2. Test the cluster
+2. Createt the router to connect to MySQL InnoDB cluster
+
+```
+./04-createCluster.sh
+```
+
+
+3. Test the cluster
 
 ## [BONUS] Test the cluster
 
-1. Point your browser to http://ip_address/demo
+
+1. Start the web server, and point your browser to http://ip_address/demo
+```
+sudo systemctl restart httpd
+```
 
 2. Select **Single Primary Cluster**, and start hitting the cluster
 
