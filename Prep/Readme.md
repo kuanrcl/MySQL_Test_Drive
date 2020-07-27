@@ -16,11 +16,11 @@ For MacOS, you can can use ``ssh`` in Mac terminal
 
 2. Select "Connection->Data", specify the login username ``opc``
 
-![ssh2](img/ssh2.png)
+![ssh3](img/ssh3.png)
 
 3. Save the session as **mysql-oci** so that you can reuse later and to create the tunnel configuration later
 
-![ssh3](img/ssh3.png)
+![ssh2](img/ssh2.png)
 
 4. Select "SSH->Tunnels", add a ``port`` (5901), ``destination`` (localhost:5901), click "Add"
 
