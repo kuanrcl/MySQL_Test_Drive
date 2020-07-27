@@ -48,6 +48,7 @@ ps -ef | grep vnc
 
 ## Configuring MySQL Workbench
 
+0. Before you launch VNC Viewer or TighVNC, **make sure** that you have started the **mysql-oci-tunnel**
 1. In your laptop, Start VNC Viewer or TigthVNC
 2. Specify local connection ``localhost:5917``
 
