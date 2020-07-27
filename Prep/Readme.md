@@ -22,9 +22,9 @@ For MacOS, you can can use ``ssh`` in Mac terminal
 
 ![ssh6](img/ssh6.png)
 
-4. Select "SSH->Tunnels", add a ``port`` (5917), ``destination`` (localhost:5917), click "Add"
+4. Select "SSH->Tunnels", add a ``port`` (5901), ``destination`` (localhost:5901), click "Add"
 
-![ssh7](img/ssh7.png)
+![ssh1](img/ssh1.png)
 
 5. Save the session as **mysql-oci-tunnel**
 
@@ -42,7 +42,7 @@ ssh opc@ip_address
 4. ssh to your compute instance
 ```
 sudo su
-service vncserver@:0.service start;
+vncserver
 ps -ef | grep vnc
 ```
 
@@ -50,7 +50,7 @@ ps -ef | grep vnc
 
 0. Before you launch VNC Viewer or TighVNC, **make sure** that you have started the **mysql-oci-tunnel**
 1. In your laptop, Start VNC Viewer or TigthVNC
-2. Specify local connection ``localhost:5917``
+2. Specify local connection ``localhost:5901``
 
 ![vnc11](img/vnc11.png)
 
