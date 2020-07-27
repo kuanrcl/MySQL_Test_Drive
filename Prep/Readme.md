@@ -39,14 +39,17 @@ ssh opc@ip_address
 1. Download and install **VNC Viewer** or **TightVNC** on Windows/Mac
 2. ssh using **mysql-oci-tunnel** using putty or ssh
 3. Start vncserver
+4. ssh to your compute instance
+```
+sudo su
+service vncserver@:0.service start;
+ps -ef | grep vnc
+```
 
-```
-vncserver -geometry 1280x1024
-```
 ## Configuring MySQL Workbench
 
 1. In your laptop, Start VNC Viewer or TigthVNC
-2. Specify local connection ``localhost:5901``
+2. Specify local connection ``localhost:5917``
 
 ![vnc1](img/vnc1.png)
 
