@@ -52,7 +52,7 @@ ps -ef | grep vnc
 1. In your laptop, Start VNC Viewer or TigthVNC
 2. Specify local connection ``localhost:5901``
 
-![vnc11](img/vnc11.png)
+![vnc1](img/vnc1.png)
 
 3. Enter password when prompted
 
