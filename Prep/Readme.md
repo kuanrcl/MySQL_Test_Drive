@@ -61,7 +61,7 @@ ps -ef | grep vnc
 ![vnc12](img/vnc12.png)
 ![vnc14](img/vnc14.png)
 ![vnc15](img/vnc15.png)
-![vnc16](img/vnc16.png)
+![vnc17](img/vnc17.png)
 ![vnc19](img/vnc19.png)
 ![vnc20](img/vnc20.png)
 
