@@ -1,6 +1,20 @@
 # Preparation
 In this lab, we will need to set up our connectivity to Oracle Cloud Infrastructure to access the compute instance provisioned with MySQL server
 
+## Register and get an Oracle Cloud compute instance
+
+1. Register yourself at http://xx.xx.xx.xx
+![reg1](img/reg-1.png)
+
+2. Once you have registered, click on your name
+![reg2](img/reg-2.png)
+
+3. Click on **Assign machine**
+![reg3](img/reg-3.png)
+
+4. You should have a machine with an IP address assigned to you
+![reg4](img/reg-4.png)
+
 ## Installing and Using SSH to work with MySQL/OCI
 We will be using ``ssh`` to connect to the compute instance running Oracle Linux
 For Windows, please install ``putty`` or use your favourite ssh tools
