@@ -56,6 +56,17 @@ ps -ef | grep vnc
 ![vnc1](img/vnc1.png)
 
 3. Enter password when prompted
+3a. The first time you run TightVNC, you will be prompted with a few screens to set up the display manager. All you need to do is to click on **Next**
+
+![vnc12](img/vnc12.png)
+![vnc13](img/vnc13.png)
+![vnc14](img/vnc14.png)
+![vnc15](img/vnc15.png)
+![vnc16](img/vnc16.png)
+![vnc17](img/vnc17.png)
+![vnc18](img/vnc18.png)
+![vnc19](img/vnc19.png)
+![vnc20](img/vnc20.png)
 
 4. Start **MySQL Workbench**
 
