@@ -43,7 +43,6 @@ ssh opc@ip_address
 3. Start vncserver
 4. ssh to your compute instance
 ```
-sudo su
 vncserver
 ps -ef | grep vnc
 ```
