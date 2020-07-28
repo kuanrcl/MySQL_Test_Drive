@@ -24,9 +24,11 @@ For MacOS, you can can use ``ssh`` in Mac terminal
 
 4. Select "SSH->Tunnels", add a ``port`` (5901), ``destination`` (localhost:5901), click "Add"
 
-![ssh1](img/ssh1.png)
+![ssh5](img/ssh5.png)
 
 5. Save the session as **mysql-oci-tunnel**
+
+![ssh8](img/ssh8.png)
 
 ### To use ssh in Mac
 
