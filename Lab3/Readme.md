@@ -9,7 +9,12 @@ MySQL can be used as a powerful analysis engine to answer and solve your questio
 ## Analyze sales performance of Fruit stores
 We will use a data set consisting of sales data of a chain fruit stores across major cities in the US. 
 
-1. Explore the data set
+Run the following queries in **MySQL Workbench**
+1. First, you will need to switch to the **Schema** view
+![sql1](img/sql-1.png)
+
+2. Expand the **demo** database, select the right icon on the **fruitmart** table to retrieve data from the table
+![sql2](img/sql-2.png)
 
 Poke around the data and find out answers to these questions:
 
@@ -19,15 +24,22 @@ Poke around the data and find out answers to these questions:
 
 * How many types of fruits the stores sell?
 ```
-select distinct fruit from fruitmart;
+select distinct fruit from demo.fruitmart;
 ```
 
 * How many stores?
 ```
-select distinct store from fruitmart;
+select distinct store from demo.fruitmart;
 ```
 
-2. Find out the sales of orange for a Durham store comparing sales performance of current, previous and the following month
+Run the following queries in your ssh terminal
+
+```
+mysql
+use demo;
+```
+
+3. Find out the sales of orange for a Durham store comparing sales performance of current, previous and the following month
 
 We use LAG() (lagging from previous sales figure) and LEAD() (leading to the following sales figure) to compare with current sales figure. Don't get frustrated if you don't understand the syntax for now, just look at the outcome of using these Window functions, appreciate how fast and simple to use **Window** function
 
@@ -45,7 +57,7 @@ WINDOW w1 AS (
 ORDER BY fruit,store;
 ```
 
-3. Rank the sales of oranges for the Durham store
+4. Rank the sales of oranges for the Durham store
 
 Lets find out more about the sales pattern of oranges in Durham by ranking the sales by month
 ```
@@ -75,7 +87,7 @@ WINDOW
 ORDER BY fruit,store,rnk;
 ```
 
-4. Rank the oranges sales with **all** the stores
+5. Rank the oranges sales with **all** the stores
 
 Lets find out which store tops the orange sales among all the stores
 
