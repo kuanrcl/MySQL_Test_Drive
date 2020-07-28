@@ -18,10 +18,6 @@ Run the following queries in **MySQL Workbench**
 
 Poke around the data and find out answers to these questions:
 
-* What are the data stored?
-
-![wb-16](img/wb-16.png)
-
 * How many types of fruits the stores sell?
 ```
 select distinct fruit from demo.fruitmart;
