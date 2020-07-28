@@ -90,7 +90,7 @@ In this quick lab, ``ssh`` to the compute instance
 
 ```
 cd ~/TestDrive/testdriver-2
-./dbsize.sh
+./dbsize.sql
 ```
 
 1. Run mysqldump 
