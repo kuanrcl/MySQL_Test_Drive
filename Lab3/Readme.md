@@ -29,7 +29,7 @@ select distinct fruit from demo.fruitmart;
 ```
 select distinct store from demo.fruitmart;
 ```
-![sql4](img/sql-5.png)
+![sql6](img/sql-6.png)
 
 Run the following queries in your ssh terminal
 
@@ -55,6 +55,8 @@ WINDOW w1 AS (
 )
 ORDER BY fruit,store;
 ```
+![sql7](img/sql-7.png)
+
 
 4. Rank the sales of oranges for the Durham store
 
