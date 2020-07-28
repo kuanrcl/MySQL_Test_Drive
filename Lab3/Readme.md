@@ -15,6 +15,7 @@ Run the following queries in **MySQL Workbench**
 
 2. Expand the **demo** database, select the right icon on the **fruitmart** table to retrieve data from the table
 ![sql2](img/sql-2.png)
+![sql3](img/sql-3.png)
 
 Poke around the data and find out answers to these questions:
 
@@ -22,11 +23,13 @@ Poke around the data and find out answers to these questions:
 ```
 select distinct fruit from demo.fruitmart;
 ```
+![sql4](img/sql-4.png)
 
 * How many stores?
 ```
 select distinct store from demo.fruitmart;
 ```
+![sql4](img/sql-5.png)
 
 Run the following queries in your ssh terminal
 
