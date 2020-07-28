@@ -19,6 +19,8 @@ Run the following queries in **MySQL Workbench**
 
 Poke around the data and find out answers to these questions:
 
+2a. Copy and paste the following SQL statement in the **Query 1** window, click the highlighted icon to run the SQL
+
 * How many types of fruits the stores sell?
 ```
 select distinct fruit from demo.fruitmart;
@@ -31,7 +33,8 @@ select distinct store from demo.fruitmart;
 ```
 ![sql6](img/sql-6.png)
 
-Run the following queries in your ssh terminal
+
+For the next few SQL, run the following queries in your ssh terminal
 
 ```
 mysql
