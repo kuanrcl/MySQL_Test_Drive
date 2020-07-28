@@ -124,4 +124,4 @@ sys     0m6.241s
 To compare the time (the actual execution of the backup process which are *user* and *sys* time) taken of mysqldump ``15.695s`` (13.976s + 1.719s) and mysqlbackup ``9.571s`` (3.333s + 6.241s)
 
 
-Clearly mysqlbackup is faster than mysqldump.
+Clearly mysqlbackup is faster than mysqldump. Yey!
