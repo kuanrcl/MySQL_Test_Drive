@@ -41,7 +41,7 @@ ssh opc@ip_address
 1. Download and install **VNC Viewer** or **TightVNC** on Windows/Mac
 2. ssh using **mysql-oci-tunnel** using putty or ssh
 3. Start vncserver
-4. ssh to your compute instance
+
 ```
 vncserver
 ps -ef | grep vnc
