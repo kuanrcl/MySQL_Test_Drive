@@ -31,7 +31,7 @@ util.importJson("./from_mongo.json", {schema: "docstore", collection: "restauran
 Once the JSON documents are imported, you can run the sample application 
 
 1. Launch the demo restaurant application (written in PHP with MySQL XDevAPI, a powerful modern API for CRUD application)
-Point your browser to http:://ip_address/restaurant/
+Point your browser to http:://<your_ip_address>/restaurant/
 
 ![json](img/json-1.png)
 
