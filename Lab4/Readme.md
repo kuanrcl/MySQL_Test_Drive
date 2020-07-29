@@ -12,17 +12,22 @@ With native support for JSON, SQL is now optional for full-stack developer, you 
 
 ## JSON in action
 
-0. We will upload a set of JSON documents into the database. We will use the sample ``restaurants`` data set exported from mongodb
+We will be using a database called **docstore** with a table **restaurants** loaded with JSON documents. 
+However, if you want to, you can use **mysql shell** to load the json documents into the table
+
+0. **[OPTIONAL]** We will upload a set of JSON documents into the database. We will use the sample ``restaurants`` data set exported from mongodb
 
 ```
 cd ~/TestDrive/testdrive-4/
 ls from_mongo.json
 mysqlsh
 \c root:mysql@localhost:33060
+\js
 \u docstore
+db.dropCollection('restaurants')
 util.importJson("./from_mongo.json", {schema: "docstore", collection: "restaurants", convertBsonOid: true});
-
 ```
+
 Once the JSON documents are imported, you can run the sample application 
 
 1. Launch the demo restaurant application (written in PHP with MySQL XDevAPI, a powerful modern API for CRUD application)
