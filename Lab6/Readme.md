@@ -15,7 +15,58 @@ cd /home/opc/TestDrive/testdrive-6
 ./01-checkConfig.sh
 ```
 
-Next, we will configure the MySQL server with a cluster admin user to be ready to deploy to InnoDB Cluster
+Hit **Enter** when prompted for password for root@localhost
+```
+[opc@instance-20200803-1826-ryan-test (150.136.237.248) testdrive-6]$ ./01-checkConfig.sh
+Please provide the password for 'root@localhost:3310':
+Save password for 'root@localhost:3310'? [Y]es/[N]o/Ne[v]er (default No):
+Validating local MySQL instance listening at port 3310 for use in an InnoDB cluster...
+
+This instance reports its own address as instance-20200803-1826-ryan-test:3310
+Clients and other cluster members will communicate with it through this address by default. If this is not correct, the report_host MySQL system variable should be changed.
+
+Checking whether existing tables comply with Group Replication requirements...
+No incompatible tables detected
+
+Checking instance configuration...
+Instance configuration is compatible with InnoDB cluster
+
+The instance 'instance-20200803-1826-ryan-test:3310' is valid to be used in an InnoDB cluster.
+
+Please provide the password for 'root@localhost:3320':
+Save password for 'root@localhost:3320'? [Y]es/[N]o/Ne[v]er (default No):
+Validating local MySQL instance listening at port 3320 for use in an InnoDB cluster...
+
+This instance reports its own address as instance-20200803-1826-ryan-test:3320
+Clients and other cluster members will communicate with it through this address by default. If this is not correct, the report_host MySQL system variable should be changed.
+
+Checking whether existing tables comply with Group Replication requirements...
+No incompatible tables detected
+
+Checking instance configuration...
+Instance configuration is compatible with InnoDB cluster
+
+The instance 'instance-20200803-1826-ryan-test:3320' is valid to be used in an InnoDB cluster.
+
+Please provide the password for 'root@localhost:3330':
+Save password for 'root@localhost:3330'? [Y]es/[N]o/Ne[v]er (default No):
+Validating local MySQL instance listening at port 3330 for use in an InnoDB cluster...
+
+This instance reports its own address as instance-20200803-1826-ryan-test:3330
+Clients and other cluster members will communicate with it through this address by default. If this is not correct, the report_host MySQL system variable should be changed.
+
+Checking whether existing tables comply with Group Replication requirements...
+No incompatible tables detected
+
+Checking instance configuration...
+Instance configuration is compatible with InnoDB cluster
+
+The instance 'instance-20200803-1826-ryan-test:3330' is valid to be used in an InnoDB cluster.
+
+
+```
+Next, we will configure the MySQL server with a cluster admin user to be ready to deploy to InnoDB Cluster.
+
 ```
 ./02-configInstance.sh
 Configuring local MySQL instance listening at port 3310 for use in an InnoDB cluster...
@@ -39,7 +90,9 @@ Do you want to perform the required configuration changes? [y/n]: y
 Do you want to restart the instance after configuring it? [y/n]: y
 ```
 
-Finally, we can start creating the InnoDB Cluster, select **Clone** when prompted on "Please select recovery method":
+Finally, we can start creating the InnoDB Cluster, select **Clone** when prompted on "Please select recovery method",
+and Press **Enter** when prompted for password for clusterAdmin
+
 ```
 03-createCluster.sh
 
