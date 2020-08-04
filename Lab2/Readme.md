@@ -39,7 +39,7 @@ One of the most important tasks of working with database engine is to backup the
 
 12. On the next screen, you will create a backup job. Before we go on to create a backup job, switch to **Query 1** tab to execute a script
 ```
-grant select on *.* on mysqlbackup@localhost;
+grant select on *.* to mysqlbackup@localhost;
 ```
 Click on the highlighted icon to execute the script. Once you are done, select the **Administration - Online Backup**
 ![wbl-11](img/wbl-11.png)
