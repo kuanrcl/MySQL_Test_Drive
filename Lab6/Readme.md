@@ -144,7 +144,7 @@ The instance 'localhost:3330' was successfully added to the cluster.
 2. Createt the router to connect to MySQL InnoDB cluster
 
 ```
-./04-createCluster.sh
+./04-createRouter.sh
 ```
 
 
