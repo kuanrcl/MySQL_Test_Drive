@@ -8,7 +8,7 @@ MySQL Enterprise Monitor is a robust, simple to use, out-of-the-box monitoring s
 ```
 ip a
 sudo systemctl stop mysqld
-rm -i /var/lib/mysql/auto.cnf
+sudo rm -i /var/lib/mysql/auto.cnf
 sudo systemctl start mysqld
 ```
 ![mem3](img/mem-3.png)
