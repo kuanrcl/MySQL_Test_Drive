@@ -4,13 +4,16 @@ You can't manage something that you don't monitor. To keep the database engine r
 MySQL Enterprise Monitor is a robust, simple to use, out-of-the-box monitoring solution for MySQL database engine
 
 ## Start monitoring your engine
-0. First, find out your ip address of the assigned compute instance, take note of this ip address
+0. First, you need to ssh to your VM to find out your ip address of the assigned compute instance, take note of this ip address. Then we need to restart the mysql database engine
 ```
 ip a
+sudo systemctl stop mysqld
+rm -i /var/lib/mysql/auto.cnf
+sudo systemctl start mysqld
 ```
 ![mem3](img/mem-3.png)
 
-1. Point your browser to https://xx.xx.xx.xx:18443/monitor, login using user **admin**
+1. Point your browser to https://xx.xx.xx.xx:18443, login using user **admin**
 ![mem1](img/mem-1.png)
 
 2. Add your database engine to the dashboard. Select **Configuration**, **MySQL Instances**, click on **Add MySQL Instance**. Make sure you enter the correct IP address and all the values highlighted in the diagram
