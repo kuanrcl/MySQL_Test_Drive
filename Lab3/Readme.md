@@ -135,7 +135,9 @@ ORDER BY fruit,rnk;
 Besides solving business problems by analysing data to gain insights into business problem, we can have a bit of fun using MySQL to solve complicated problem such as **Sudoku**. We are going to use another powerful MySQL function, **WITH RECURSIVE** to solve Sudoku puzzle
 
 1. We will first define the Sudoku puzzle
+
 ```
+mysql -uroot -h127.0.0.1 -P3306 -p
 select @myproblem:='..41..2.3........12.....8..82.6.43.....8.9.....67.2.48..5.....64........3.7..69..';
 
 
