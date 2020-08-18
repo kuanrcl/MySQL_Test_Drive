@@ -49,7 +49,7 @@ We use LAG() (lagging from previous sales figure) and LEAD() (leading to the fol
 SELECT store, month, fruit, sold,
   LAG(sold)  OVER w1 AS prev,
   LEAD(sold) OVER w1 AS next
-FROM fruitmart
+FROM demo.fruitmart
 WHERE fruit = 'oranges'
   AND store = 'Durham'
 WINDOW w1 AS (
@@ -70,7 +70,7 @@ SELECT store, month, fruit, sold,
   LEAD(sold)      OVER w1  AS next,
   ROUND(AVG(sold) OVER w3) AS avg,
   RANK()          OVER w2  AS rnk
-FROM fruitmart
+FROM demo.fruitmart
 WHERE fruit = 'oranges'
   AND store = 'Durham'
 WINDOW
@@ -102,7 +102,7 @@ SELECT store, month, fruit, sold,
   ROUND(AVG(sold) OVER w4) AS s_avg,
   ROUND(AVG(sold) OVER w3) AS a_avg,
   RANK()          OVER w2  AS rnk
-FROM fruitmart
+FROM demo.fruitmart
 WHERE fruit = 'oranges'
 WINDOW
   w1 AS (
