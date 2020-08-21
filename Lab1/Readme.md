@@ -7,9 +7,11 @@ The MySQL server is up and running at the OCI compute instance, we will use MySQ
 
 ## Engine Status (is it running? how much is the CPU utilization, etc)
 
-There are 2 tabs in the **Navigator** panel of the Workbench
+There are 2 tabs in the **Navigator** panel of the Workbench (you can alternate the 2 different views by clicking the arrow to change the view)
+
 * **Administration**
 * Schemas
+
 ![wb32](img/wb-32.png)
 
 We will use the **Administration** to navigate engine, first we will look at the **Server Status**
