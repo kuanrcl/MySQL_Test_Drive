@@ -21,7 +21,7 @@ However, if you want to, you can use **mysql shell** to load the json documents 
 cd ~/TestDrive/testdrive-4/
 ls from_mongo.json
 mysqlsh
-\c root:mysql@localhost:33060
+\c root@localhost:33060
 \js
 \u docstore
 db.dropCollection('restaurants')
@@ -46,7 +46,7 @@ We will use mysqlsh to query JSON documents stored in MySQL which you have used 
 ```
 mysqlsh
 \js
-\c root:mysql@localhost:33060
+\c root@localhost:33060
 \u docstore
 var r=db.getCollection('restaurants')
 r.find().limit(2)
