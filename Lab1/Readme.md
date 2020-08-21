@@ -10,6 +10,7 @@ The MySQL server is up and running at the OCI compute instance, we will use MySQ
 There are 2 tabs in the **Navigator** panel of the Workbench
 * **Administration**
 * Schemas
+![wb32](img/wb-32.png)
 
 We will use the **Administration** to navigate engine, first we will look at the **Server Status**
 * The host information
