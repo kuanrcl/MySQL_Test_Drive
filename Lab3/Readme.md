@@ -56,7 +56,7 @@ WINDOW w1 AS (
   PARTITION BY fruit,store
   ORDER BY store,month
 )
-ORDER BY fruit,store;
+
 ```
 ![sql7](img/sql-7.png)
 
