@@ -34,4 +34,4 @@ select * from customer limit 10;
 select * from payment limit 5;
 \q
 ```
-![fw-07](img/fw-07.png)
+![fw-04](img/fw-04.png)
