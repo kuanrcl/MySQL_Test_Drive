@@ -23,7 +23,7 @@ select * from payment limit 5;
 \q
 ```
 * Back to Workbench, switch the **Recording** mode to **Protecting** mode, and remove all the SQL statements except **SELECT * FROM customer LIMIT 10**, click on **Apply**
-![fw-05](img/fw-05.png)
+![fw-06](img/fw-06.png)
 
 * Back to terminal to test the firewall rule
 ```
@@ -34,4 +34,4 @@ select * from customer limit 10;
 select * from payment limit 5;
 \q
 ```
-![fw-06](img/fw-06.png)
+![fw-07](img/fw-07.png)
