@@ -4,4 +4,4 @@ MySQL Audit is enabled, you can checked the configuration and view the audit rec
 
 ![au1](img/audit-01.jpg)
 
-1[au2](img/audit-02.png)
+![au2](img/audit-02.png)
