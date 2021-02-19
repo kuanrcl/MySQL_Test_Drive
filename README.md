@@ -12,5 +12,9 @@ Are you brave enough to test the awesome power of MySQL engine?
 | [Test Drive 4](Lab4) | Working with JSON documents
 | [Test Drive 5](Lab5) | Monitoring your database engine
 | [Test Drive 6](Lab6) | Building highly available database cluster
+| [Test Drive 7](Lab7) | Audit
+| [Test Drive 8](Lab8) | Transparent Data Encryption
+| [Test Drive 9](Lab9) | Firewall
+
 
 
