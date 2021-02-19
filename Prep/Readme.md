@@ -151,6 +151,15 @@ Once you have installed MySQL Workbench, you will need to configure a ``connecti
 
 ![server4](img/wb_s4.png)
 
+# Clone from github
+
+You are required to clone a couple of github repositories for your lab exercises
+
+```
+git clone http://github.com/ivanxma/mylab
+git clone http://github.com/ivanxma/innoDBClusterLab
+ls
+```
 
 
 
