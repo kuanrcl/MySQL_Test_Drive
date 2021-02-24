@@ -17,7 +17,7 @@ sudo vi /etc/my.cnf
 mysql -uroot -h127.0.0.1 -P3306 -p
 use demo;
 create table tab1 (c1 int primary key, c2 varchar(20)) encryption='Y';
-insert into tabl1 values (1, 'John Doe');
+insert into tab1 values (1, 'John Doe');
 \q
 ```
 
