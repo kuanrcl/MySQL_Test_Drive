@@ -24,7 +24,7 @@ insert into tab1 values (1, 'John Doe');
 * verify the table file created
 
 ```
-suduo su mysql
+sudo su mysql
 cd /var/lib/mysql/demo
 strings tab1.ibd | more
 ```
