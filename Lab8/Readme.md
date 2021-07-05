@@ -11,6 +11,10 @@ sudo vi /etc/my.cnf
 ```
 
 * Restart the mysql server
+
+```
+sudo systemctl restart mysqld
+```
 * Create an encrypted table
 
 ```
